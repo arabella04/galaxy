@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive 3D Galaxy Playlist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="instructions">
+        <h1>CAS System</h1>
+        <p>A / Click: Rotate & Zoom</p>
+        <p>🖱️ <b>Click Planet:</b> Focus, Play & Scale Up</p>
+        <p>🎵 <b>Click Lyric Line:</b> Jump to Song Time</p>
+        <p>🌌 <b>Click Empty Space:</b> Reset View</p>
+    </div>
+
+    <div id="info-panel">
+        <button id="close-btn">&times;</button>
+        <h2 id="planet-name">PLANET NAME</h2>
+        
+        <div id="song-title">TRACK TITLE</div>
+        <div id="song-artist">ARTIST NAME</div>
+
+        <div class="panel-section">
+            <h3>Synced Lyrics</h3>
+            <div id="lyrics-container">
+                </div>
+        </div>
+    </div>
+
+    <div id="canvas-container"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
